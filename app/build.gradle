@@ -1,0 +1,9 @@
+apply plugin: 'com.android.application'
+apply from: "../basic_build.gradle"
+
+dependencies {
+    implementation "androidx.core:core-ktx:${AndroidX.core}"
+    implementation "androidx.appcompat:appcompat:${AndroidX.appcompat}"
+    implementation "com.google.android.material:material:${Google.material}"
+    implementation "androidx.constraintlayout:constraintlayout:${AndroidX.constraint_layout}"
+}
