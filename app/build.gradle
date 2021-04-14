@@ -1,6 +1,17 @@
 apply plugin: 'com.android.application'
 apply from: "../basic_build.gradle"
 
+android {
+    sourceSets {
+        main {
+            res.srcDirs(
+                    'src/main/res',
+                    'src/main/res_core',
+                    'src/main/res_feed',
+            )
+        }
+    }
+}
 dependencies {
     implementation "androidx.core:core-ktx:${AndroidX.core}"
     implementation "androidx.appcompat:appcompat:${AndroidX.appcompat}"
